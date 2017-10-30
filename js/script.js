@@ -17,7 +17,7 @@ $(function(){
 });
 
 
-$('.prof-sites__service, .seo__service, .design__service, .other__service').click(function(){
+$('.prof-sites__service, .seo__service, .design__service, .other__service, .policy_link').click(function(){
     var type = $(this).attr('typesite');
     $('.service-detail').load('popups/' + type + '.html');
     $('.service-detail').animate({
