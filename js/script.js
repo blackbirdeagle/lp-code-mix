@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('.prof-sites__service, .seo__service, .design__service, .other__service').click(function(){
+        $('.service-detail').load('popups/visitka.html');
         $('.service-detail').animate({
             right: '0',
         }, 500, function(){
@@ -13,6 +14,7 @@ $(document).ready(function() {
                     right: '-100%',
                 }, 500, function(){
                 $('body').css({'overflow': 'auto'});
+                $('.service-detail').empty();
             });
         }
     }
