@@ -1,4 +1,5 @@
 function closePopup(){
+    $('.close_popup').css({'display':'none'});
     $('.service-detail').animate({
         right: '-100%',
     }, 500, function(){
@@ -23,11 +24,13 @@ $('.prof-sites__service, .seo__service, .design__service, .other__service').clic
         right: '0',
     }, 500, function(){
         $('body').css({'overflow-y': 'hidden'});
+        $('.close_popup').css({'display':'block'});
     });
 });
 
 function keyExit(e){
     if(e.keyCode == 27){
+        $('.close_popup').css({'display':'none'});
         $('.service-detail').animate({
             right: '-100%',
         }, 500, function(){
