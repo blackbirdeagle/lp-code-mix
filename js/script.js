@@ -1,6 +1,16 @@
+function closePopup(){
+    $('.service-detail').animate({
+        right: '-100%',
+    }, 500, function(){
+        $('body').css({'overflow': 'auto'});
+        $('.service-detail').empty();
+    });
+}
+
 $(document).ready(function() {
     $('.prof-sites__service, .seo__service, .design__service, .other__service').click(function(){
-        $('.service-detail').load('popups/visitka.html');
+        var type = $(this).attr('typesite');
+        $('.service-detail').load('popups/' + type + '.html');
         $('.service-detail').animate({
             right: '0',
         }, 500, function(){
