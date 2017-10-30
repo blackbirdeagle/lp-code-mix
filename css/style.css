@@ -18,7 +18,7 @@ body{
 	margin: 0;
 	padding: 0;	
 	text-shadow: none;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 img{
@@ -191,6 +191,10 @@ ul{
 	background-position-x: 50%;
 	background-position-y: 0;
 	background-size: contain;
+}
+
+.about__text{
+	margin-bottom: 20px;
 }
 /*-----------------Sites block--------------------------*/
 .prof-sites{
@@ -574,6 +578,7 @@ ul{
 	top: 20px;
 	display: none;
 }
+
 /*-----------------------------------------------------*/
 /*@media (min-width: 1200px){
 	.container {
