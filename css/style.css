@@ -1,0 +1,504 @@
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PT Sans'), local('PTSans-Regular'),
+	url(../fonts/pt-sans.woff) format('woff'),
+	url(../fonts/pt-sans.ttf) format('truetype');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'PT Sans', arial;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;	
+	text-shadow: none;
+	font-size: 14px;
+}
+
+img{
+	border: none;	
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+h1, h2{
+	margin: 40px 0;
+}
+
+h1, h2{
+	text-align: center;
+	font-size: 48px;
+	text-transform: uppercase;
+	color: #ed553e;
+}
+
+.content-inner h1{
+	margin: 0 0 26px 0;
+}
+
+h2 span{
+	font-size: 21px !important;
+}
+
+p{
+	margin: 0;
+
+}
+
+ul{
+	margin: 0;
+}
+
+.header{
+	background-color: #7b1b1b;
+	padding: 20px 0;
+}
+
+.header__logo img{
+	width: 100%;
+}
+
+.header__menu{
+	float: right;
+	margin-top: 25px;
+}
+
+.header__menu ul{
+	list-style: none;
+	overflow: hidden;
+}
+
+.header__menu ul li{
+	float: left;
+}
+
+.header__menu ul li:last-child{
+	margin-right: 0;
+}
+
+.header__menu ul li a{
+	color: #fff;
+	font-size: 18px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.header__menu__home{
+	background-image: url(../images/menu1.png);
+}
+
+.header__menu__services{
+	background-image: url(../images/menu2.png);
+}
+
+.header__menu__blog{
+	background-image: url(../images/menu3.png);
+}
+
+.header__menu__vac{
+	background-image: url(../images/menu4.png);
+}
+
+.header__menu__contacts{
+	background-image: url(../images/menu6.png);
+}
+
+.header__menu ul li a:hover{
+	background-position: 0 -27px;
+	color: #ed553e;
+	text-decoration: none;
+}
+
+.dostigeniya{
+	min-height: 800px;
+	background: url(../images/dostigeniya_bg.jpg) no-repeat;
+	background-position-x: 100%;
+	background-size: cover;
+    padding: 40px 0;
+}
+
+#idnice:after{
+	content: '%';
+}
+
+#idmoresites:before{
+	content: '>';
+}
+
+#idtopsites:after{
+	content: '+';
+}
+
+.dostigeniya__content{
+    margin-bottom: 80px;
+}
+
+.dostigeniya__content h1{
+	color: #ed553e;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.dostigeniya__content h1 span{
+	font-weight: normal;
+}
+
+.dostigeniya__content__item{
+	text-align: center;
+}
+
+.dostigeniya__content__item span{
+	font-size: 50px;
+	color: #7b1b1b;
+	display: block;
+	border-bottom: 1px dashed #7b1b1b;
+}
+
+.dostigeniya__content__item__note{
+	font-size: 15px !important;
+	border: none !important;
+    margin-top: 10px;
+}
+
+.dostigeniya__scroll{
+    display: block;
+    width: 76px;
+    height: 134px;
+    background: url(../images/mouse2.png) 76px 0;
+    margin: 0 auto;
+
+}
+
+.dostigeniya__scroll:hover{
+    background: url(../images/mouse2.png) 0 0;
+}
+
+/*------------------About block-------------------------*/
+.about{
+	padding: 30px 0 60px 0;
+	background: url(../images/tenblockindex.png) no-repeat;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-size: contain;
+}
+/*-----------------Sites block--------------------------*/
+.prof-sites{
+	padding: 30px 0 60px 0;
+	background: url(../images/tenblockindex.png) no-repeat;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-size: contain;
+}
+
+.prof-sites__service{
+	border: 3px solid #fff;
+	padding: 27px 12px;
+	text-align: center;
+	color: #000;
+	min-height: 326px;
+	cursor: pointer;
+}
+
+.prof-sites__service__img{
+	height: 140px;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-repeat: no-repeat;
+}
+
+.prof-sites__service:hover{
+	border: 3px solid #ed553e;
+	text-decoration: none;
+	color: #ed553e;
+}
+
+.prof-sites__service:hover .prof-sites__service__img{
+	background-position: 50% -270px;
+}
+
+.prof-sites__service__visitka{
+	background-image: url(../images/usluga1.png);
+}
+
+.prof-sites__service__magazin{
+	background-image: url(../images/usluga2.png);
+}
+
+.prof-sites__service__portal{
+	background-image: url(../images/usluga3.png);
+}
+
+.prof-sites__service__landing{
+	background-image: url(../images/usluga4.png);
+}
+
+.prof-sites__service__blog{
+	background-image: url(../images/usluga5.png);
+}
+
+.prof-sites__service__portal{
+	background-image: url(../images/usluga6.png);
+}
+
+.prof-sites__service__name{
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 500;
+}
+
+/*------------------Seo block------------------------*/
+.seo{
+	padding: 60px 0;
+	background: url(../images/tenblockindex.png) no-repeat;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-size: contain;
+}
+
+.seo__service{
+	border: 3px solid #fff;
+	padding: 27px 12px;
+	text-align: center;
+	color: #000;
+	min-height: 326px;
+	cursor: pointer;
+}
+
+.seo__service:hover{
+	border: 3px solid #ed553e;
+	text-decoration: none;
+	color: #ed553e;
+}
+
+.seo__service:hover .seo__service__img{
+	background-position: 50% -270px;
+}
+
+.seo__service:hover .seo__service__smm{
+	background-position: 50% -276px !important;
+}
+
+.seo__service__img{
+	height: 140px;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-repeat: no-repeat;
+}
+
+.seo__service__searcher{
+	background-image: url(../images/usluga7.png);
+}
+
+.seo__service__smm{
+	background-image: url(../images/usluga8.png);
+}
+
+.seo__service__reklama{
+	background-image: url(../images/usluga9.png);
+}
+
+.seo__service__name{
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 500;
+}
+
+/*----------------Design block------------------------*/
+.design{
+	padding: 60px 0;
+	background: url(../images/tenblockindex.png) no-repeat;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-size: contain;
+}
+
+.design__service{
+	border: 3px solid #fff;
+	padding: 27px 12px;
+	text-align: center;
+	color: #000;
+	min-height: 326px;
+	cursor: pointer;
+}
+
+.design__service:hover{
+	border: 3px solid #ed553e;
+	text-decoration: none;
+	color: #ed553e;
+}
+
+.design__service:hover .design__service__img{
+	background-position: 50% -270px;
+}
+
+.design__service:hover .design__service__design{
+	background-position: 50% -268px;
+}
+
+.design__service:hover .design__service__logo{
+	background-position: 50% -277px;
+}
+
+.design__service__img{
+	height: 140px;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-repeat: no-repeat;
+}
+
+.design__service__style{
+	background-image: url(../images/usluga13.png);
+}
+
+.design__service__design{
+	background-image: url(../images/usluga14.png);
+}
+
+.design__service__logo{
+	background-image: url(../images/usluga15.png);
+}
+
+.design__service__name{
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 500;
+}
+
+.other{
+	padding: 60px 0;
+	background: url(../images/tenblockindex.png) no-repeat;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-size: contain;
+}
+
+/*-----------------Other services block-------------------*/
+.other__service{
+	border: 3px solid #fff;
+	padding: 27px 12px;
+	text-align: center;
+	color: #000;
+	min-height: 326px;
+	cursor: pointer;
+}
+
+.other__service:hover{
+	border: 3px solid #ed553e;
+	text-decoration: none;
+	color: #ed553e;
+}
+
+.other__service:hover .other__service__img{
+	background-position: 50% -270px;
+}
+
+.other__service:hover .other__service__style{
+	background-position: 50% -293px;
+}
+
+.other__service:hover .other__service__copy{
+	background-position: 50% -290px;
+}
+
+.other__service__img{
+	height: 140px;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-repeat: no-repeat;
+}
+
+.other__service__style{
+	background-image: url(../images/usluga19.png);
+}
+
+.other__service__copy{
+	background-image: url(../images/usluga20.png);
+}
+
+.other__service__admin{
+	background-image: url(../images/usluga21.png);
+}
+
+.other__service__name{
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 500;
+}
+
+/*-------------------Contacts block----------------------*/
+.contacts{
+	padding: 60px 0 0 0;
+	background: url(../images/tenblockindex.png) no-repeat;
+	background-position-x: 50%;
+	background-position-y: 0;
+	background-size: contain;
+}
+
+.contacts__inner{
+	min-height: 532px;
+	background-image: url(../images/c_girl.png);
+	background-repeat: no-repeat;
+	background-position-y: 100%;
+	background-size: 100%;
+	width: 100%;
+}
+
+.contacts__inner__text{
+
+}
+
+.contacts__inner__form input[type = "text"]{
+	width: 100%;
+	height: 42px;
+	margin-bottom: 10px;
+	padding: 0 15px;
+	border: 2px solid #7b1b1b;
+}
+
+.contacts__inner__form textarea{
+	width: 100%;
+	resize: none;
+	padding: 15px;
+	height: 100px;
+	border: 2px solid #7b1b1b;
+}
+
+/*--------------Service detail------------------*/
+.service-detail{
+	background: rgba(0, 0, 0, 0.90);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 990;
+	right: -100%;
+	overflow-y: scroll;
+}
+/*----------------FOOTER--------------------*/
+.footer {
+	background-color: #7b1b1b;
+	padding: 20px 0;
+}
+
+.footer p{
+	text-align: center;
+	color: #fff;
+}
+/*-------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*@media (min-width: 1200px){
+	.container {
+		width: 960px;
+	}
+}*/
