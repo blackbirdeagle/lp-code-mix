@@ -459,7 +459,8 @@ ul{
 }
 
 .contacts__inner__text{
-
+	margin-bottom: 20px;
+	margin-top: 70px;
 }
 
 .contacts__inner__form input[type = "text"]{
@@ -468,6 +469,67 @@ ul{
 	margin-bottom: 10px;
 	padding: 0 15px;
 	border: 2px solid #7b1b1b;
+}
+
+.contacts__inner__form input[type = "file"]{
+	display: none;
+}
+
+.select_file{
+	display: block;
+	background-color: #7b1b1b;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	height: 42px;
+	padding-top: 7px;
+	transition: 0.5s;
+	margin-bottom: 10px;
+}
+
+.select_file:hover, .select_file:active, .select_file:visited{
+	color: #fff;
+	text-decoration: none;
+	background-color: #ed553e;
+}
+
+.contacts__inner__form input[type = "submit"]{
+	background-color: #7b1b1b;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	height: 42px;
+	transition: 0.5s;
+	border: none;
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.contacts__inner__form input[type = "submit"]:hover{
+	color: #fff;
+	text-decoration: none;
+	background-color: #ed553e;
+}
+
+.contacts__inner__form__policy{
+	display: block;
+	margin-top: 20px;
+	color: #ed553e;
+	margin-bottom: 10px;
+}
+
+.contacts__inner__form__policy:hover{
+	color: #ed553e;
+}
+
+.contacts__inner__text a{
+	color: #ed553e;
+}
+
+.contacts__inner__text a:hover{
+	color: #ed553e;
 }
 
 .contacts__inner__form textarea{
@@ -595,6 +657,14 @@ ul{
 @media (max-width: 991px){
 	.dostigeniya{
 		background: none;
+	}
+
+	.contacts__inner{
+		display: none;
+	}
+
+	.contacts__inner__text{
+		margin-top: 0;
 	}
 }
 
