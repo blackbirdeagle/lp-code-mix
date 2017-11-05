@@ -642,6 +642,13 @@ ul{
 }
 
 /*-----------------------------------------------------*/
+.mobile__menu__btn{
+	position: fixed;
+	top: 0px;
+	z-index: 9;
+	display: none;
+}
+
 /*@media (min-width: 1200px){
 	.container {
 		width: 960px;
@@ -672,6 +679,28 @@ ul{
 	.header__logo{
 		width: 350px;
 		margin: 0 auto;
+	}
+
+	.header__menu{
+		float: none;
+		position: fixed;
+		z-index: 9;
+		background: rgba(0, 0, 0, 0.5);
+		width: 300px;
+		display: none;
+	}
+
+	.header__menu ul{
+		padding-top: 10px;
+	}
+
+	.header__menu ul li{
+		float: none;
+		margin-bottom: 10px;
+	}
+
+	.mobile__menu__btn{
+		display: block;
 	}
 }
 

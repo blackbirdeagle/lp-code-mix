@@ -8,6 +8,12 @@ function closePopup(){
     });
 }
 
+function centerMenu(){
+    var left = $('body').width() / 2 - $('.header__menu').width() / 2;
+    var top = document.documentElement.clientHeight / 2 - $('.header__menu').height() / 2;
+    $('.header__menu').css('left', left).css('top', top);
+}
+
 $(function(){
     $("a[href^='#']").click(function(){
         var _href = $(this).attr("href");
@@ -42,3 +48,23 @@ function keyExit(e){
 
 addEventListener("keydown", keyExit);
 
+$(window).resize(function () {
+    centerMenu();
+});
+
+window.addEventListener("orientationchange", function() {
+    centerMenu();
+}, false);
+
+var flag = 0;
+
+$('.mobile__menu__btn').click(function(){
+    if(flag == 0) {
+        $('.header__menu').fadeIn(300);
+        centerMenu();
+        flag = 1;
+    }else{
+        $('.header__menu').fadeOut(300);
+        flag = 0;
+    }
+});
