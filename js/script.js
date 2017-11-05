@@ -68,3 +68,33 @@ $('.mobile__menu__btn').click(function(){
         flag = 0;
     }
 });
+
+window.alert = function(_content, _title, smile, showTitle, afterCloseRedirect) {
+    var _title = _title || 'Ошибка!';
+    var smile = smile || false;
+    var showTitle = showTitle || false;
+    var _content = _content || 'Что-то пошло не так';
+    var d = $.Deferred();
+    $.fancybox({
+        content: ' \
+        <div class="f-popup f-popup__recovery '+(showTitle === true?'':'__whide')+' " id="success-popup"> \
+            '+(showTitle === true?'<div class="f-popup-title">'+_title+'</div>':'')+' \
+            <div class="f-popup__recovery"> \
+                <div class="f-popup__recovery-text"> \
+                    <p>'+_content+'</p> \
+                </div> \
+                '+(smile === true?'<div class="smile"><span>:</span>)</div>':"")+' \
+            </div> \
+        </div> \
+        ',
+        afterClose: function(){
+            d.resolve();
+            if(afterCloseRedirect)
+                window.top.location.href = afterCloseRedirect;
+        }
+    });
+
+    return d.promise();
+};
+
+alert();
