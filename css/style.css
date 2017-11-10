@@ -649,11 +649,16 @@ ul{
 	display: none;
 }
 
-/*@media (min-width: 1200px){
-	.container {
-		width: 960px;
-	}
-}*/
+.f-popup{
+	width: 300px;
+}
+
+.f-popup-title{
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 20px;
+}
 
 @media (max-width: 1199px){
 	.service-detail__img img{
