@@ -96,5 +96,3 @@ window.alert = function(_content, _title, smile, showTitle, afterCloseRedirect) 
 
     return d.promise();
 };
-
-alert('Какая-то ошибка', 'Пиздец', false, true, false);
