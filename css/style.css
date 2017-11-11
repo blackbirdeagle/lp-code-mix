@@ -660,6 +660,10 @@ ul{
 	margin-bottom: 20px;
 }
 
+.error_field{
+	background-color: #ffc9c9;
+}
+
 @media (max-width: 1199px){
 	.service-detail__img img{
 		width: 100%;

@@ -278,20 +278,20 @@
                         <p><b>Skype:</b> code-mix</p>
                     </div>
                     <div class = "contacts__inner__form">
-                        <form method = "POST" action = "">
+                        <form id = "feedback" method = "POST" action = "send.php">
                             <div class = "row">
                                 <div class = "col-md-6 col-sm-6"><input type = "text" name = "name" placeholder = "Имя*"/></div>
-                                <div class = "col-md-6 col-sm-6"><input type = "text" name = "phone" placeholder = "Телефон*"/></div>
+                                <div class = "col-md-6 col-sm-6"><input type = "text" name = "phone" class = "phone" placeholder = "Телефон"/></div>
                             </div>
                             <div class = "row">
-                                <div class = "col-md-6 col-sm-6"><input type = "text" name = "email" placeholder = "E-mail"/></div>
+                                <div class = "col-md-6 col-sm-6"><input type = "text" name = "email" placeholder = "E-mail*"/></div>
                                 <div class = "col-md-6 col-sm-6">
-                                    <input type = "file" name = "file"/>
+                                    <input type = "file" name = "file" onChange="fnOpenFile(this)"/>
                                     <a class = "select_file" href = "javascript:void(0);">Выбрать файл</a>
                                 </div>
                             </div>
                             <div class = "row">
-                                <div class = "col-md-12"><textarea placeholder = "Сообщение"></textarea></div>
+                                <div class = "col-md-12"><textarea placeholder = "Сообщение*"></textarea></div>
                             </div>
                             <div class = "row">
                                 <div class = "col-md-6 col-sm-6"><a class = "policy_link contacts__inner__form__policy" typesite = "policy" href = "javascript:void(0);">Политика конфиденциальности</a></div>
@@ -328,13 +328,13 @@
         window.onload = function(){
             var _time = 1200;
             var t1 = setInterval(function(){
-                setUp('idlet', _time, 7, t1);
+                setUp('idlet', _time, 3, t1);
             }, _time/7);
             var t2 = setInterval(function(){
-                setUp('idmoresites', _time, 300, t2);
+                setUp('idmoresites', _time, 60, t2);
             }, _time/300);
             var t3 = setInterval(function(){
-                setUp('idtopsites', _time, 50, t3);
+                setUp('idtopsites', _time, 16, t3);
             }, _time/35);
             var t4 = setInterval(function(){
                 setUp('idnice', _time, 95, t4);
@@ -344,6 +344,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="plugins/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+    <script src="js/maskedinput.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
