@@ -151,3 +151,6 @@ $('.contacts__inner__form input[type = "submit"]').click(function(){
         return false;
     }
 });
+
+var wow = new WOW();
+wow.init();
